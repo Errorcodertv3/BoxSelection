@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta information for character set and responsive design -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Title of the webpage -->
+    <title>Product Box Selection</title>
+
+    <!-- Link to external CSS file for styling -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Main container for the webpage -->
+    <div class="flex-column">
+      
+      <!-- Website name container with lines around the website name -->
+      <div class="website-name-container">
+        <div class="line"></div>
+        <div class="website-name">YAY! It's BOGO</div>
+        <div class="line"></div>
+      </div>
+
+      <div class="flex-column">
+        <!-- Product box 1 -->
+        <div class="box" class="flex-column" id="box1" onmouseover="selectBox(1)">
+          <div class="box-header">
+            <div class="left">
+              <!-- Radio button for selecting the product -->
+              <div class="radio">
+                <input type="radio" id="unit1" name="unit" />
+                <label for="unit1"></label>
+              </div>
+              <div class="details">
+                <!-- Unit and discount info -->
+                <div class="unit">
+                  1 Unit <span class="discount">10% Off</span>
+                </div>
+                <div class="price" id="price1">Standard Price</div>
+              </div>
+            </div>
+            <div class="right">
+              <!-- Current price and original price display -->
+              <div class="current-price" data-price="10.00">10.00 USD</div>
+              <div class="original-price">24.00 USD</div>
+            </div>
+          </div>
+          <!-- Dropdown section for size and color selection -->
+          <div id="dropdown1" class="dropdown">
+            <div class="dropdown-header">
+              <label for="size-select">Size</label>
+              <label for="color-select">Colour</label>
+            </div>
+            <div class="dropdown-header">
+              <!-- Selection for size and color -->
+              <span>#1</span>
+              <select name="sizes" class="select-width" id="size-select">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="Lg">Lg</option>
+              </select>
+              <select name="colors" class="select-width" id="color-select">
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+              </select>
+            </div>
+            <div class="dropdown-header">
+              <!-- Selection for the second set of size and color -->
+              <span>#2</span>
+              <select name="sizes" class="select-width" id="size-select">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="Lg">Lg</option>
+              </select>
+              <select name="colors" class="select-width" id="color-select">
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product box 2 (most popular) -->
+        <div class="box" class="flex-column" id="box2" onmouseover="selectBox(2)">
+          <div class="most-popular">MOST POPULAR</div>
+          <div class="box-header">
+            <div class="left">
+              <div class="radio">
+                <input type="radio" id="unit2" name="unit" />
+                <label for="unit2"></label>
+              </div>
+              <div class="details">
+                <div class="unit">
+                  2 Unit <span class="discount">20% Off</span>
+                </div>
+                <div class="price" id="price2">Standard Price</div>
+              </div>
+            </div>
+            <div class="right">
+              <div class="current-price" data-price="18.00">18.00 USD</div>
+              <div class="original-price">24.00 USD</div>
+            </div>
+          </div>
+          <!-- Dropdown section for size and color selection for box 2 -->
+          <div id="dropdown2" class="dropdown">
+            <div class="dropdown-header">
+              <label for="size-select">Size</label>
+              <label for="color-select">Colour</label>
+            </div>
+            <div class="dropdown-header">
+              <span>#1</span>
+              <select name="sizes" class="select-width" id="size-select">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="Lg">Lg</option>
+              </select>
+              <select name="colors" class="select-width" id="color-select">
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+              </select>
+            </div>
+            <div class="dropdown-header">
+              <span>#2</span>
+              <select name="sizes" class="select-width" id="size-select">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="Lg">Lg</option>
+              </select>
+              <select name="colors" class="select-width" id="color-select">
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product box 3 -->
+        <div class="box" class="flex-column" id="box3" onmouseover="selectBox(3)">
+          <div class="box-header">
+            <div class="left">
+              <div class="radio">
+                <input type="radio" id="unit3" name="unit" />
+                <label for="unit3"></label>
+              </div>
+              <div class="details">
+                <div class="unit">
+                  3 Unit <span class="discount">30% Off</span>
+                </div>
+                <div class="price" id="price3">Standard Price</div>
+              </div>
+            </div>
+            <div class="right">
+              <div class="current-price" data-price="24.00">24.00 USD</div>
+              <div class="original-price">24.00 USD</div>
+            </div>
+          </div>
+          <!-- Dropdown section for size and color selection for box 3 -->
+          <div id="dropdown3" class="dropdown">
+            <div class="dropdown-header">
+              <label for="size-select">Size</label>
+              <label for="color-select">Colour</label>
+            </div>
+            <div class="dropdown-header">
+              <span>#1</span>
+              <select name="sizes" class="select-width" id="size-select">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="Lg">Lg</option>
+              </select>
+              <select name="colors" class="select-width" id="color-select">
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+              </select>
+            </div>
+            <div class="dropdown-header">
+              <span>#2</span>
+              <select name="sizes" class="select-width" id="size-select">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="Lg">Lg</option>
+              </select>
+              <select name="colors" class="select-width" id="color-select">
+                <option value="Red">Red</option>
+                <option value="Blue">Blue</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Free delivery and total price section -->
+        <div>
+          <div class="free-delivery">
+            <span>Free Delivery</span>
+            <div class="total">
+              <span id="total-price" >Total :</span>
+              <span id="total-price" >$18.00 USD</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Button to add items to cart -->
+        <div>
+          <button class="add-to-cart">+ Add to Cart</button>
+          <!-- Footer section for the site -->
+          <span class="powered-by">© Powered by Pumper</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Link to external JavaScript file for functionality -->
+    <script src="script.js"></script>
+  </body>
+</html>

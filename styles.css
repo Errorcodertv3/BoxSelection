@@ -1,0 +1,230 @@
+/* General styling for body, centering content */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Flexbox column layout */
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Space between flex items */
+}
+
+/* Container that holds content */
+.container {
+    text-align: center;
+}
+
+/* Styling for the box, which holds individual items */
+.box {
+    border: 2px solid #e0e0e0;
+    padding: 20px;
+    width: 400px;
+    background-color: #fff;
+    transition: all 0.3s ease; /* Smooth transition for changes */
+    position: relative;
+}
+
+/* Additional styles when a box is selected */
+.box.selected {
+    border-color: #ff5e7d; /* Change border color */
+    height: 174.11px; /* Increase height on selection */
+    background-color: #fff0f0; /* Light pink background */
+}
+
+/* Left section styling within each box */
+.left {
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+/* Radio button styling */
+.radio {
+    margin-right: 10px; /* Space between radio and label */
+}
+
+.radio input {
+    display: none; /* Hide default radio button */
+}
+
+.radio label {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid #ff5e7d;
+    border-radius: 50%; /* Circular radio button */
+    position: relative;
+}
+
+/* Styling for the selected radio button */
+.radio input:checked + label::after {
+    content: "";
+    width: 9px;
+    height: 9px;
+    background-color: #ff5e7d;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centering the dot */
+}
+
+/* Details section within the box */
+.details {
+    text-align: left;
+}
+
+.details .unit {
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 16.94px;
+}
+
+/* Discount badge styling */
+.details .discount {
+    background-color: #ff5e7d;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+/* Price text styling */
+.details .price {
+    font-size: 12px;
+    line-height: 14.52px;
+}
+
+/* Right section styling within the box */
+.right {
+    text-align: right;
+}
+
+/* Current price styling */
+.right .current-price {
+    font-weight: bold;
+    font-size: 14.46px;
+    color: #000000;
+}
+
+/* Original price (strikethrough) styling */
+.right .original-price {
+    color: #888;
+    font-size: 10px;
+    text-decoration-line: line-through;
+}
+
+/* Powered by text styling */
+.powered-by {
+    font-style: italic;
+    font-size: 12px;
+    color: #666;
+    margin: 2px 0;
+    float: right;
+}
+
+/* Container for website name with horizontal line */
+.website-name-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.line {
+    flex-grow: 1;
+    border-bottom: 1px solid #c8c8c8;
+    margin: 0 10px;
+}
+
+/* Website name styling */
+.website-name {
+    font-size: 24px;
+    font-weight: 400;
+    color: #ff5e7d;
+}
+
+/* Most popular badge styling */
+.most-popular {
+    position: absolute;
+    top: -9px;
+    right: 0px;
+    background-color: #ff5e7d;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 12px;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+/* Dropdown styling */
+.dropdown {
+    display: none;
+}
+
+/* Free delivery section styling */
+.free-delivery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.free-delivery span {
+    color: #ff6b82;
+    font-size: 14px;
+    font-weight: 500;
+}
+/* Total Price */
+#total-price{
+    color: #000000;
+
+}
+/* Header for dropdown */
+.dropdown-header {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Box header styling */
+.box-header {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Select width for dropdown */
+.select-width {
+    width: 70px;
+}
+
+/* Total price styling */
+.total {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Add to cart button styling */
+.add-to-cart {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6b82;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
